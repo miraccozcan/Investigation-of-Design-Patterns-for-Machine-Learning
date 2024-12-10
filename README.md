@@ -20,7 +20,7 @@
 
 ## 4. Diagram
 ### Workflow Components:
-1. **Pre-Trained Model**: A model trained on a large dataset (e.g., ImageNet for vision tasks).  
+1. **Pre-Trained Model**: A model trained on a large dataset
 2. **Feature Extractor**: Extracts relevant features for the new task.  
 3. **Fine-Tuning**: Adjusts the model’s layers to optimize for the specific dataset.
 

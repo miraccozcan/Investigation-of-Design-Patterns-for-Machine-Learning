@@ -29,7 +29,7 @@ The workflow shows how the pre-trained model's knowledge is transferred and fine
 
 ---
 
-## 5. Simple Code Example (Python using TensorFlow)
+## 5. Simple Code Example
 ```python
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.models import Sequential

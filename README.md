@@ -77,5 +77,47 @@ model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
 ```
 pip install tensorflow
 ```
+
 ### Complex code
 The full code is available in the attached file: transferLearning.py. You can find it in the repository for this project.
+
+### Output
+```
+C:\Users\mirac\OneDrive\Desktop\Seneca Learnings\Term 5\Design Patterns\Assignment 6\transferLearning>python transferLearning.py
+2024-12-09 20:25:34.266189: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-12-09 20:25:35.590326: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Found 1257 images belonging to 3 classes.
+Found 3 images belonging to 3 classes.
+Classes in dataset: {'birds': 0, 'cats': 1, 'dogs': 2}
+Number of training samples: 1257
+Number of validation samples: 3
+2024-12-09 20:25:39.069405: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\mirac\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+Epoch 1/5
+629/629 ━━━━━━━━━━━━━━━━━━━━ 0s 271ms/step - accuracy: 0.3951 - loss: 7.7640C:\Users\mirac\AppData\Local\Programs\Python\Python312\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+629/629 ━━━━━━━━━━━━━━━━━━━━ 178s 275ms/step - accuracy: 0.3951 - loss: 7.7572 - val_accuracy: 0.3333 - val_loss: 1.1041
+Epoch 2/5
+629/629 ━━━━━━━━━━━━━━━━━━━━ 170s 270ms/step - accuracy: 0.3951 - loss: 1.1056 - val_accuracy: 0.3333 - val_loss: 1.1164
+Epoch 3/5
+629/629 ━━━━━━━━━━━━━━━━━━━━ 169s 269ms/step - accuracy: 0.4067 - loss: 1.1079 - val_accuracy: 0.3333 - val_loss: 1.1266
+Epoch 4/5
+629/629 ━━━━━━━━━━━━━━━━━━━━ 170s 270ms/step - accuracy: 0.4246 - loss: 1.0821 - val_accuracy: 0.3333 - val_loss: 1.1329
+Epoch 5/5
+629/629 ━━━━━━━━━━━━━━━━━━━━ 171s 272ms/step - accuracy: 0.4034 - loss: 1.1126 - val_accuracy: 0.3333 - val_loss: 1.1370
+3/3 ━━━━━━━━━━━━━━━━━━━━ 0s 69ms/step - accuracy: 0.5417 - loss: 1.1095
+Validation Accuracy: 33.33%
+```
+
+## 8. References
+1. Crawford, C. (2018, February 16). *Cat dataset*. Kaggle. [https://www.kaggle.com/datasets/crawford/cat-dataset](https://www.kaggle.com/datasets/crawford/cat-dataset)
+
+2. *Labeled image datasets for Computer Vision.* (n.d.). Labeled image datasets for computer vision. [https://images.cv/download/dog/19921](https://images.cv/download/dog/19921)
+
+3. Prashanth, C. M. (2023, June 13). *Birds Image Dataset*. Kaggle. [https://www.kaggle.com/datasets/klu2000030172/birds-image-dataset](https://www.kaggle.com/datasets/klu2000030172/birds-image-dataset)
+
+4. Tensorflow. *TensorFlow.* (n.d.). [https://www.tensorflow.org/](https://www.tensorflow.org/)
+
+5. YouTube. (n.d.). *YouTube.* [https://www.youtube.com/watch?v=yofjFQddwHE&t=24s&ab_channel=DeepLearningAI](https://www.youtube.com/watch?v=yofjFQddwHE&t=24s&ab_channel=DeepLearningAI)

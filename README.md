@@ -1,5 +1,3 @@
-# Lesson Plan: Transfer Learning
-
 ## 1. Introduction
 - **Pattern Name**: Transfer Learning  
 - **Type**: Patterns That Modify Model Training

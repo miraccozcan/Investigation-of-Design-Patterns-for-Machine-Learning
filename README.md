@@ -2,8 +2,8 @@
 
 ## 1. Introduction
 - **Pattern Name**: Transfer Learning  
-- **Type**: Patterns That Modify Model Training (Machine Learning)  
-- **Short Introduction**: Transfer Learning uses a pre-trained model to solve new, related tasks. It helps reduce the need for large datasets and extensive computational resources.
+- **Type**: Patterns That Modify Model Training
+- **Short Introduction**: Transfer learning is a method in machine learning where a pre-trained model is reused for a new problem. It helps machines apply knowledge from one task to perform better in another. For instance, a model trained to detect food can be used to identify drinks. The idea is based on the fact that deep learning models trained on large datasets learn general features, which can be useful for different tasks. This makes pre-trained models an efficient starting point for solving new problems.
 
 ---
 
@@ -18,14 +18,7 @@
 
 ---
 
-## 4. Diagram
-### Workflow Components:
-1. **Pre-Trained Model**: A model trained on a large dataset
-2. **Feature Extractor**: Extracts relevant features for the new task.  
-3. **Fine-Tuning**: Adjusts the model’s layers to optimize for the specific dataset.
-
-### Diagram Description:
-The workflow shows how the pre-trained model's knowledge is transferred and fine-tuned for new applications.
+## 4. UML Diagram
 
 ---
 
@@ -59,3 +52,30 @@ base_model.trainable = False
 # Compile and train the model
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 model.fit(X_train, y_train, epochs=10, validation_data=(X_test, y_test))
+```
+## 6. Common usage in the software industry 
+### 1. **Image Classification**
+- Pre-trained models, such as those trained on ImageNet, are commonly used to extract features. These features serve as input to train a new classifier for a specific dataset or task.
+
+### 2. **Object Detection**
+- Models like Faster R-CNN are used as feature extractors. Pre-trained layers identify features, and additional layers handle object detection for new datasets.
+
+### 3. **Natural Language Processing (NLP)**
+- Pre-trained models like BERT are fine-tuned for tasks such as sentiment analysis or text translation, leveraging their existing language understanding.
+
+### 4. **Speech Recognition**
+- Pre-trained models like DeepSpeech extract key audio features, which are then used to build a specialized speech recognition system.
+
+### 5. **Anomaly Detection**
+- Pre-trained models learn normal patterns and detect irregularities by analyzing deviations in new data.
+
+### 6. **Recommendation Systems**
+- Pre-trained models trained on user behavior initialize features in recommendation systems, enhancing predictions using learned patterns.
+
+## 7. A complex code problem
+### Requirements
+```
+pip install tensorflow
+```
+### Complex code
+The full code is available in the attached file: transferLearning.py. You can find it in the repository for this project.

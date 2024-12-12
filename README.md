@@ -17,7 +17,7 @@
 ---
 
 ## 4. UML Diagram
-![Image Description](path-to-image-or-URL)
+![Image Description](https://github.com/Paschal78/Transfer_Learning_Design_Pattern/blob/patch-1/LAST%20UML-10.png?raw=true))
 
 ---
 

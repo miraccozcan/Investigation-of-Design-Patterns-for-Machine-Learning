@@ -17,6 +17,7 @@
 ---
 
 ## 4. UML Diagram
+![Image Description](path-to-image-or-URL)
 
 ---
 
